@@ -260,7 +260,7 @@ _common_attrs = {
     "namespace": attr.string(),
     "resolver": attr.label(
         default = Label("//k8s:resolver"),
-        cfg = "host",
+        cfg = "exec",
         executable = True,
         allow_files = True,
     ),
